@@ -103,13 +103,14 @@ Clova Note plain text 파일을 전제로 합니다. 전사 파일에는 보통 
 
 경로가 모호하면 스킬은 후보를 ordered list로 보여 주고, 번호 또는 텍스트로 선택하도록 요청해야 합니다.
 
-## 결과 예시
+## 출력물 구성
 
-이 저장소에는 샘플 전사 파일, 템플릿, 생성 결과가 함께 들어 있습니다.
+출력물은 보통 다음 요소를 포함합니다.
 
-- 템플릿 예시: [tests/general.md](./tests/general.md)
-- 전사 예시: [tests/인프라 스터디 킥오프 미팅.txt](./tests/%EC%9D%B8%ED%94%84%EB%9D%BC%20%EC%8A%A4%ED%84%B0%EB%94%94%20%ED%82%A5%EC%98%A4%ED%94%84%20%EB%AF%B8%ED%8C%85.txt)
-- 생성 결과 예시: [tests/회의록_2026-04-13_인프라 스터디 킥오프 미팅.md](./tests/%ED%9A%8C%EC%9D%98%EB%A1%9D_2026-04-13_%EC%9D%B8%ED%94%84%EB%9D%BC%20%EC%8A%A4%ED%84%B0%EB%94%94%20%ED%82%A5%EC%98%A4%ED%94%84%20%EB%AF%B8%ED%8C%85.md)
+- 템플릿의 원래 Markdown 구조
+- 각 문장 또는 bullet을 뒷받침하는 timestamp 주석
+- 회의 목적, 아젠다, 논의 내용, 결정 사항, 액션 아이템 같은 핵심 섹션
+- 전사 파일 metadata에서 추출한 제목, 날짜, 참석자 정보
 
 ## 지원 에이전트
 
@@ -127,8 +128,7 @@ Clova Note plain text 파일을 전제로 합니다. 전사 파일에는 보통 
 ├── README.md
 ├── INSTALL.md
 ├── SKILL.md
-├── references/
-└── tests/
+└── references/
 ```
 
 ## 참고 문서
